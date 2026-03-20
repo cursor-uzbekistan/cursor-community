@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Navbar from '@/components/Navbar';
 import HeroHeader from '@/components/HeroHeader';
 import AmbassadorSection from '@/components/AmbassadorSection';
 import FeaturedSection from '@/components/FeaturedSection';
@@ -9,6 +10,7 @@ import UpcomingEvents from '@/components/UpcomingEvents';
 import PastEvents from '@/components/PastEvents';
 import GlobalEvents from '@/components/GlobalEvents';
 import Partners from '@/components/Partners';
+import SectionDivider from '@/components/SectionDivider';
 import JsonLd from '@/components/JsonLd';
 import { siteConfig } from '@/content/site.config';
 import { upcomingEvents } from '@/content/events';
@@ -47,13 +49,18 @@ const Home: React.FC = () => {
 	return (
 		<main className="min-h-screen bg-cursor-bg text-cursor-text scroll-smooth">
 			<JsonLd data={buildHomeJsonLd()} />
+			<Navbar />
 			<HeroHeader />
 
-			<div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
+			<div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
 				<AmbassadorSection />
+				<SectionDivider />
 				<FeaturedSection />
+				<SectionDivider />
 				<UpcomingEvents />
+				<SectionDivider />
 				<PastEvents />
+				<SectionDivider />
 				<GlobalEvents />
 
 				<motion.footer
@@ -64,7 +71,9 @@ const Home: React.FC = () => {
 					className="mt-24 pt-8 border-t border-cursor-border text-center"
 				>
 					<Partners />
-					<p className="text-cursor-text-muted text-sm mb-3">{siteConfig.footerTagline || t('footer.madeWith')}</p>
+					<p className="text-cursor-text-muted text-sm mb-3">
+						{siteConfig.footerTagline || t('footer.madeWith')}
+					</p>
 					<div className="flex items-center justify-center gap-4">
 						<a
 							href={siteConfig.lumaUrl}
