@@ -198,6 +198,8 @@ See `CONTRIBUTING.md`.
 - [cursorthailand.com](https://cursorthailand.com)
 - [cursorserbia.com](https://cursorserbia.com)
 - [cursorcroatia.com](https://cursorcroatia.com)
+- [cursorsrilanka.com](https://cursorsrilanka.com)
+- [cursoraustria.com](https://cursoraustria.com)
 
 Using this template? Open a PR to add your site here.
 
