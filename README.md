@@ -200,6 +200,9 @@ See `CONTRIBUTING.md`.
 - [cursorcroatia.com](https://cursorcroatia.com)
 - [cursorsrilanka.com](https://cursorsrilanka.com)
 - [cursoraustria.com](https://cursoraustria.com)
+- [cursorgermany.com](https://cursorgermany.com)
+- [cursorslc.com](https://cursorslc.com)
+- [cursorelsalvador.com](https://cursorelsalvador.com)
 
 Using this template? Open a PR to add your site here.
 
